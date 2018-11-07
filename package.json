@@ -1,0 +1,23 @@
+{
+  "name": "nfv-inspector-bms-hss-fe-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michelgokan/NFV-Inspector-BMS-HSS-FE-Plugin.git"
+  },
+  "author": "Michel Gokan Khan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michelgokan/NFV-Inspector-BMS-HSS-FE-Plugin/issues"
+  },
+  "homepage": "https://github.com/michelgokan/NFV-Inspector-BMS-HSS-FE-Plugin#readme",
+  "dependencies": {
+    "path": "^0.12.7",
+    "strong-globalize": "^4.1.2"
+  }
+}
