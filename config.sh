@@ -13,3 +13,4 @@ fi
 echo "Running ./Plugins/$PLUGIN_NAME"
 cd ./Plugins/$PLUGIN_NAME
 source config.sh
+cd ../../
