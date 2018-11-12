@@ -1,0 +1,27 @@
+{
+  "name": "nfv-inspector-bms-hss-fe-plugin",
+  "plural": "nfv-inspector-bms-hss-fe-plugin",
+  "base": "Model",
+  "properties": {},
+  "methods": {
+    "startBenchmark": {
+      "isStatic": true,
+      "description": "Starts update location benchmark.",
+      "accepts": [{
+        "arg": "rate",
+        "type": "number",
+        "http": {
+          "source": "query"
+        },
+        "description": "Specifies number of requests per second."
+      }],
+      "returns": {
+        "arg": "result",
+        "type": "string"
+      },
+      "http": {
+        "verb": "get"
+      }
+    }
+  }
+}
