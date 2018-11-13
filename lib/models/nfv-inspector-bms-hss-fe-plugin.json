@@ -83,6 +83,64 @@
       "http": {
         "verb": "get"
       }
+    },
+    "getBenchmarkResults": {
+      "isStatic": true,
+      "description": "Returns benchmark results.",
+      "accepts": [
+        {
+          "arg": "name",
+          "type": "string",
+          "http": {
+            "source": "query"
+          },
+          "required": true,
+          "description": "Name of the benchmark"
+        },
+        {
+          "arg": "rate",
+          "type": "number",
+          "http": {
+            "source": "query"
+          },
+          "required": true,
+          "description": "Specifies number of requests per second."
+        },
+        {
+          "arg": "duration",
+          "type": "number",
+          "http": {
+            "source": "query"
+          },
+          "required": true,
+          "description": "Specifies the duration of the test."
+        },
+        {
+          "arg": "start_time",
+          "type": "DateString",
+          "http": {
+            "source": "query"
+          },
+          "required": true,
+          "description": "Specifies test's start date/time."
+        },
+        {
+          "arg": "end_time",
+          "type": "DateString",
+          "http": {
+            "source": "query"
+          },
+          "required": true,
+          "description": "Specifies test's end date/test."
+        }
+      ],
+      "returns": {
+        "arg": "result",
+        "type": "json"
+      },
+      "http": {
+        "verb": "get"
+      }
     }
   }
 }
