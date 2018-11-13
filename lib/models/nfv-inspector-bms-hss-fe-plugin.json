@@ -8,16 +8,46 @@
       "isStatic": true,
       "description": "Starts update location benchmark.",
       "accepts": [{
+        "arg": "name",
+        "type": "string",
+        "http": {
+          "source": "query"
+        },
+        "required": true,
+        "description": "Name of the benchmark"
+      },{
         "arg": "rate",
         "type": "number",
         "http": {
           "source": "query"
         },
+        "required": true,
         "description": "Specifies number of requests per second."
-      }],
+      }
+      ],
       "returns": {
         "arg": "result",
         "type": "string"
+      },
+      "http": {
+        "verb": "get"
+      }
+    },
+    "checkBenchmarkProgress": {
+      "isStatic": true,
+      "description": "Returns completion percentage of benchmark.",
+      "accepts": [{
+        "arg": "name",
+        "type": "string",
+        "http": {
+          "source": "query"
+        },
+        "required": true,
+        "description": "Name of the benchmark"
+      }],
+      "returns": {
+        "arg": "result",
+        "type": "number"
       },
       "http": {
         "verb": "get"
