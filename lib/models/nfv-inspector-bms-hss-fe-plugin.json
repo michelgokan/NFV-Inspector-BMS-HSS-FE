@@ -7,23 +7,34 @@
     "startBenchmark": {
       "isStatic": true,
       "description": "Starts update location benchmark.",
-      "accepts": [{
-        "arg": "name",
-        "type": "string",
-        "http": {
-          "source": "query"
+      "accepts": [
+        {
+          "arg": "name",
+          "type": "string",
+          "http": {
+            "source": "query"
+          },
+          "required": true,
+          "description": "Name of the benchmark"
         },
-        "required": true,
-        "description": "Name of the benchmark"
-      },{
-        "arg": "rate",
-        "type": "number",
-        "http": {
-          "source": "query"
+        {
+          "arg": "rate",
+          "type": "number",
+          "http": {
+            "source": "query"
+          },
+          "required": true,
+          "description": "Specifies number of requests per second."
         },
-        "required": true,
-        "description": "Specifies number of requests per second."
-      }
+        {
+          "arg": "duration",
+          "type": "number",
+          "http": {
+            "source": "query"
+          },
+          "required": true,
+          "description": "Specifies the duration of the test."
+        }
       ],
       "returns": {
         "arg": "result",
@@ -36,15 +47,35 @@
     "checkBenchmarkProgress": {
       "isStatic": true,
       "description": "Returns completion percentage of benchmark.",
-      "accepts": [{
-        "arg": "name",
-        "type": "string",
-        "http": {
-          "source": "query"
+      "accepts": [
+        {
+          "arg": "name",
+          "type": "string",
+          "http": {
+            "source": "query"
+          },
+          "required": true,
+          "description": "Name of the benchmark"
         },
-        "required": true,
-        "description": "Name of the benchmark"
-      }],
+        {
+          "arg": "rate",
+          "type": "number",
+          "http": {
+            "source": "query"
+          },
+          "required": true,
+          "description": "Specifies number of requests per second."
+        },
+        {
+          "arg": "duration",
+          "type": "number",
+          "http": {
+            "source": "query"
+          },
+          "required": true,
+          "description": "Specifies the duration of the test."
+        }
+      ],
       "returns": {
         "arg": "result",
         "type": "number"
