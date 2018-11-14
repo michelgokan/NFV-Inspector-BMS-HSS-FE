@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/michelgokan/NFV-Inspector-BMS-HSS-FE-Plugin#readme",
   "dependencies": {
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.23",
     "path": "^0.12.7",
     "request": "^2.88.0",
     "strong-globalize": "^4.1.2"
